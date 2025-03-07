@@ -1,15 +1,29 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, use } from "react";
 import { Card, CardContent } from "../ui/Card";
 import { Input } from "../ui/Input";
 import { Button } from "../ui/Button";
 import { Send, X, Loader2, Bot, User } from "lucide-react";
+import { useLoc } from "../../Context/DistContext";
+// import { useContext } from "react";
+// import { LocContext } from "../../Context/DistContext";
 
 export default function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
-  const [state, setState] = useState("Maharashtra");
+  // const [state, setState] = useState("Maharashtra");
   const [isLoading, setIsLoading] = useState(false);
+
+  // const distcon = useContext(LocContext);
+  // distcon.setdist(state);
+
+  // const district = distcon.dist;
+
+  // const distri = useLoc().dist;
+  // useLoc().setdist("thane");
+  // console.log(distri);
+
+  const state_c = useLoc().state;
 
   useEffect(() => {
     setMessages([
@@ -18,7 +32,7 @@ export default function Chatbot() {
         sender: "bot",
       },
     ]);
-  }, [state]);
+  }, [state_c]);
 
   const handleSend = async () => {
     if (!input.trim()) return;
@@ -31,7 +45,7 @@ export default function Chatbot() {
     try {
       setIsLoading(true);
       const response = await fetch(
-        `http://34.121.0.250:8000/chat/${state}/${encodeURIComponent(
+        `http://34.121.0.250:8000/chat/${state_c}/${encodeURIComponent(
           userInput
         )}`
       );

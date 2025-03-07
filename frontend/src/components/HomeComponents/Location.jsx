@@ -1,15 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
+import { useLoc } from "../../Context/DistContext";
 
 export default function Location() {
-  const [state, setState] = useState("");
-  const [district, setDistrict] = useState("");
   const navigate = useNavigate();
+
+  const { state, setState, dist, setdist } = useLoc();
+
+  console.log(state, dist);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (state && district) {
-      navigate(`/markets?state=${state}&district=${district}`);
+    if (state && dist) {
+      navigate(`/markets?state=${state}&district=${dist}`);
     }
   };
 
@@ -131,8 +134,8 @@ export default function Location() {
                         id="district-city"
                         name="district-city"
                         placeholder="Enter district/city"
-                        value={district}
-                        onChange={(e) => setDistrict(e.target.value)}
+                        value={dist}
+                        onChange={(e) => setdist(e.target.value)}
                         required
                         className="block w-full pl-10 pr-3 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-green-500 dark:focus:ring-green-400 focus:border-green-500 dark:focus:border-green-400"
                       />
