@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Gradient animation class */
+.animate-gradient-rotate {
+  background-size: 400% 400%;
+  backdrop-filter: blur(10px);
+  animation: gradient-rotate 10s ease infinite;
+}
+
+/* Keyframes for gradient rotation animation */
+@keyframes gradient-rotate {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Background size utilities */
+.bg-auto {
+  background-size: auto;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-400\% {
+  background-size: 400% 400%;
+}
