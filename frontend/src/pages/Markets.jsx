@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import MarketMap from "../components/MarketMap/MarketMap";
+import Chat from "../components/chatbot/Chat";
+
+// import { useLoc } from "../Context/DistContext";
 
 export default function Markets() {
   const [searchParams] = useSearchParams();
@@ -10,9 +13,11 @@ export default function Markets() {
   const [loading, setLoading] = useState(false);
   const [images, setImages] = useState(null);
   const [error, setError] = useState(null);
-  const [userDistrict, setUserDistrict] = useState("");
+  const [userDistrict, setUserDistrict] = useState(district);
   const [nearestMarket, setNearestMarket] = useState(null);
   const [commodityImages, setCommodityImages] = useState({});
+
+  // const { state, setstate } = useLoc();
 
   useEffect(() => {
     if (!state) return;
@@ -122,22 +127,22 @@ export default function Markets() {
 
       if (data.hits && data.hits.length > 0) {
         // Update the commodityImages state with the new image URL
-        setCommodityImages(prev => ({
+        setCommodityImages((prev) => ({
           ...prev,
-          [commodity]: data.hits[0].webformatURL
+          [commodity]: data.hits[0].webformatURL,
         }));
         return data.hits[0].webformatURL;
       }
-      
+
       // If no image found, store a placeholder
-      setCommodityImages(prev => ({
+      setCommodityImages((prev) => ({
         ...prev,
-        [commodity]: '/placeholder-image.jpg' // Add a default placeholder image
+        [commodity]: "/placeholder-image.jpg", // Add a default placeholder image
       }));
-      return '/placeholder-image.jpg';
+      return "/placeholder-image.jpg";
     } catch (err) {
       console.error(`Error fetching image for ${commodity}:`, err);
-      return '/placeholder-image.jpg';
+      return "/placeholder-image.jpg";
     }
   };
 
@@ -150,18 +155,20 @@ export default function Markets() {
         </h2>
 
         {district && (
-          <div className="mb-6">
-            <h3 className="text-xl font-bold mb-2">Find Nearest Market</h3>
+          <div className="flex justify-center items-center flex-col mb-6">
+            <h3 className="text-xl text-gray-500 font-bold mb-2">
+              Find Nearest Market
+            </h3>
             <input
               type="text"
               value={userDistrict}
               onChange={handleDistrictChange}
               placeholder="Enter your district"
-              className="border p-2 mr-2 rounded"
+              className="w-[40%]  border p-2 mr-2 rounded text-amber-50 m-2 "
             />
             <button
               onClick={findNearestMarket}
-              className="bg-blue-500 text-white p-2 rounded"
+              className="bg-green-500 text-white p-2 rounded w-[40%] mr-2  "
             >
               Find
             </button>
@@ -171,11 +178,11 @@ export default function Markets() {
         <MarketMap markets={marketData} nearestMarket={nearestMarket} />
 
         {nearestMarket && (
-          <div className="bg-yellow-100 p-4 rounded-md mb-6">
-            <h3 className="text-xl font-bold">
+          <div className="bg-green-100 p-4 rounded-md mb-6 mt-7">
+            <h3 className="text-xl font-bold mb-1">
               Nearest Market: {nearestMarket.Market}
             </h3>
-            <p>
+            <p className="mb-1.5">
               Location: {nearestMarket.lat[0]}, {nearestMarket.lng[0]}
             </p>
 
@@ -193,9 +200,9 @@ export default function Markets() {
                   <div className="relative aspect-square bg-green-100 dark:bg-green-900 overflow-hidden">
                     <div className="w-full h-full flex items-center justify-center bg-gray-100 dark:bg-gray-800">
                       {commodityImages[commodity] ? (
-                        <img 
+                        <img
                           className="w-full h-full object-cover"
-                          src={commodityImages[commodity]} 
+                          src={commodityImages[commodity]}
                           alt={commodity}
                           loading="lazy"
                         />
@@ -203,8 +210,7 @@ export default function Markets() {
                         <div className="animate-pulse w-full h-full bg-gray-200 dark:bg-gray-700" />
                       )}
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
-                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3"></div>
                   </div>
                   <div className="p-3 text-center">
                     <h3 className="font-semibold text-gray-900 dark:text-white">
@@ -220,6 +226,7 @@ export default function Markets() {
           </div>
         )}
       </div>
+      <Chat />
     </div>
   );
 }
