@@ -12,6 +12,10 @@ import pineapple from './pineapple.jpg';
 import musk from './musk.jpg';
 import jamun from './jamun.jpg';
 import farmer from './farmer.webm';
+import farmer1 from './farmer1.jpg';
+import farmer2 from './framer2.jpg';
+import farmer3 from './farrmer3.jpg';
+import farmer4 from './farmer4.jpg';
 
 export {
   leaves,
@@ -27,6 +31,10 @@ export {
   pineapple,
   musk,
   jamun,
-  farmer
+  farmer,
+  farmer1,
+  farmer2,
+  farmer3,
+  farmer4,
 
 };

@@ -1,42 +1,42 @@
 import React from "react";
-import { mango } from "../../assets/assets";
+import { farmer, farmer1, farmer2, farmer3, farmer4, mango } from "../../assets/assets";
 import "../homeComponents/Style.css";
 
 const vendors = [
   {
     name: "Smit Barve",
     description: "Mumbai",
-    image: mango,
+    image: farmer1,
     review: "Great quality products and timely delivery.",
   },
   {
     name: "John Doe",
     description: "Consectetur ",
-    image: mango,
+    image: farmer2,
     review: "Very satisfied with the service.",
   },
   {
     name: "Jane Smith",
     description: "Sed do eiusmod tempor.",
-    image: mango,
+    image: farmer3,
     review: "Excellent customer support.",
   },
   {
     name: "Alice Johnson",
     description: "Incididunt ut labore et dolore.",
-    image: mango,
+    image: farmer4,
     review: "Highly recommend for organic products.",
   },
   {
     name: "Bob Brown",
     description: "Magna aliqua. Ut enim ad minim.",
-    image: mango,
+    image: farmer1,
     review: "Good variety of products and reasonable prices.",
   },
   {
     name: "Charlie Davis",
     description: "Veniam, quis nostrud exercitation.",
-    image: mango,
+    image: farmer2,
     review: "Reliable and trustworthy vendor.",
   },
 ];
