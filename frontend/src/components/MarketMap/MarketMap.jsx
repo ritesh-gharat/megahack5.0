@@ -88,6 +88,22 @@ export default function MarketMap({ markets, nearestMarket }) {
           infoWindow.open(mapInstance, marker);
         });
       });
+
+      // Add circle around the nearest market
+      if (nearestMarket) {
+        const nearestMarketPosition = {
+          lat: parseFloat(nearestMarket.lat[0]),
+          lng: parseFloat(nearestMarket.lng[0]),
+        };
+
+        new window.google.maps.Circle({
+          map: mapInstance,
+          radius: 2000, // Radius in meters
+          fillColor: "#AA0000",
+          stoke: "#FF0000",
+          center: nearestMarketPosition,
+        });
+      }
     };
 
     loadGoogleMaps();
@@ -100,5 +116,5 @@ export default function MarketMap({ markets, nearestMarket }) {
     };
   }, [markets, nearestMarket]);
 
-  return <div ref={mapRef} style={{ height: "400px", width: "100%" }} />;
+  return <div ref={mapRef} style={{ height: "600px", width: "100%", borderRadius: "10px" }} />;
 }

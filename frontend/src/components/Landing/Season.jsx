@@ -16,12 +16,12 @@ export default function Season() {
         <button class="whitespace-nowrap px-4 py-2 mx-1 mb-2 bg-green-600 hover:bg-green-700 text-white rounded-full text-sm font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800" id="el-02mc052k">
           All Produce
         </button>
-        <button class="whitespace-nowrap px-4 py-2 mx-1 mb-2 bg-white dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200 rounded-full text-sm font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800" id="el-vzbl79z4">
+        {/* <button class="whitespace-nowrap px-4 py-2 mx-1 mb-2 bg-white dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200 rounded-full text-sm font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800" id="el-vzbl79z4">
           Vegetables
         </button>
         <button class="whitespace-nowrap px-4 py-2 mx-1 mb-2 bg-white dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200 rounded-full text-sm font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800" id="el-3f7bhiey">
           Fruits
-        </button>
+        </button> */}
       </div>
 
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6" id="el-z96ot3zn">

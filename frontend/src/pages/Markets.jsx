@@ -8,9 +8,11 @@ export default function Markets() {
   const district = searchParams.get("district");
   const [marketData, setMarketData] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [images, setImages] = useState(null);
   const [error, setError] = useState(null);
   const [userDistrict, setUserDistrict] = useState("");
   const [nearestMarket, setNearestMarket] = useState(null);
+  const [commodityImages, setCommodityImages] = useState({});
 
   useEffect(() => {
     if (!state) return;
@@ -100,6 +102,45 @@ export default function Markets() {
       <div className="text-center py-12">Please search for a location.</div>
     );
 
+  const getImages = async (commodity) => {
+    if (!commodity) return;
+
+    // If we already have the image URL cached, return it
+    if (commodityImages[commodity]) {
+      return commodityImages[commodity];
+    }
+
+    try {
+      const response = await fetch(
+        `https://pixabay.com/api/?key=${
+          import.meta.env.VITE_PIXABAY_API_KEY
+        }&q=${encodeURIComponent(commodity)}&image_type=photo&per_page=3`
+      );
+
+      if (!response.ok) throw new Error("Failed to fetch images");
+      const data = await response.json();
+
+      if (data.hits && data.hits.length > 0) {
+        // Update the commodityImages state with the new image URL
+        setCommodityImages(prev => ({
+          ...prev,
+          [commodity]: data.hits[0].webformatURL
+        }));
+        return data.hits[0].webformatURL;
+      }
+      
+      // If no image found, store a placeholder
+      setCommodityImages(prev => ({
+        ...prev,
+        [commodity]: '/placeholder-image.jpg' // Add a default placeholder image
+      }));
+      return '/placeholder-image.jpg';
+    } catch (err) {
+      console.error(`Error fetching image for ${commodity}:`, err);
+      return '/placeholder-image.jpg';
+    }
+  };
+
   return (
     <div className="py-12 md:py-16 lg:py-20 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-4">
@@ -127,6 +168,8 @@ export default function Markets() {
           </div>
         )}
 
+        <MarketMap markets={marketData} nearestMarket={nearestMarket} />
+
         {nearestMarket && (
           <div className="bg-yellow-100 p-4 rounded-md mb-6">
             <h3 className="text-xl font-bold">
@@ -135,17 +178,47 @@ export default function Markets() {
             <p>
               Location: {nearestMarket.lat[0]}, {nearestMarket.lng[0]}
             </p>
+
             <h4 className="font-semibold">Commodities</h4>
-            {nearestMarket.commodities.map((commodity, idx) => (
-              <p key={`nearest-commodity-${idx}`}>
-                {commodity}: ₹
-                {nearestMarket.prices[idx].toLocaleString("en-IN")}
-              </p>
-            ))}
+
+            <div
+              class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6"
+              id="el-z96ot3zn"
+            >
+              {nearestMarket.commodities.map((commodity, idx) => (
+                <div
+                  className="bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 group"
+                  key={`nearest-commodity-${idx}`}
+                >
+                  <div className="relative aspect-square bg-green-100 dark:bg-green-900 overflow-hidden">
+                    <div className="w-full h-full flex items-center justify-center bg-gray-100 dark:bg-gray-800">
+                      {commodityImages[commodity] ? (
+                        <img 
+                          className="w-full h-full object-cover"
+                          src={commodityImages[commodity]} 
+                          alt={commodity}
+                          loading="lazy"
+                        />
+                      ) : (
+                        <div className="animate-pulse w-full h-full bg-gray-200 dark:bg-gray-700" />
+                      )}
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                    </div>
+                  </div>
+                  <div className="p-3 text-center">
+                    <h3 className="font-semibold text-gray-900 dark:text-white">
+                      {commodity}
+                    </h3>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                      ₹ {nearestMarket.prices[idx].toLocaleString("en-IN")}/- Q
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         )}
-
-        <MarketMap markets={marketData} nearestMarket={nearestMarket} />
       </div>
     </div>
   );

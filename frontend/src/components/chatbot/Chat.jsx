@@ -15,6 +15,7 @@ export default function Chatbot() {
     setMessages([
       {
         text: "Hello! I'm your farming assistant. How can I help you today?",
+        sender: "bot",
       },
     ]);
   }, [state]);
@@ -166,7 +167,7 @@ export default function Chatbot() {
                       }
                     }}
                     placeholder="Ask your question here..."
-                    className="flex-1 border-green-200 focus:ring-green-500 focus:border-green-500"
+                    className="flex-1 border-green-200 focus:ring-green-500 focus:border-green-500 text-white"
                   />
                   <Button
                     onClick={handleSend}
