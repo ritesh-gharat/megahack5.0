@@ -1,16 +1,17 @@
-import React from "react";
-import Navbar from "../components/homeComponents/Navbar";
-import Season from "../components/Landing/Season";
-import Chatbot from "../components/Chatbot/Chat";
-import Location from "../components/homeComponents/Location";
+import Vendors from '../components/HomeComponents/Vendor'
+import Chat from '../components/chatbot/Chat'
+import Location from '../components/HomeComponents/Location'
+import Navbar from '../components/HomeComponents/Navbar'
+import Season from '../components/HomeComponents/Season'
 
 export default function Home() {
   return (
     <div>
-      <Navbar />
-      <Location />
-      <Season />
-      <Chatbot />
+      <Navbar/>
+      <Location/>
+      <Vendors/>
+      <Season/>
+      <Chat/>
     </div>
   );
 }
