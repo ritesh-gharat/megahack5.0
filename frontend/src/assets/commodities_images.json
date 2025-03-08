@@ -1,0 +1,580 @@
+{
+  "commodities": [
+    {
+      "commodity": "Tomato",
+      "imageUrl": "https://pixabay.com/get/gaba2688a4d7cb6e266671629e3c8b0089398723c27e7124ec40fdeee2ccb373366e21401cad6a413be9f0dffb21c3b89fa27f0cbb1b783ef0a10218001891f70_640.jpg"
+    },
+    {
+      "commodity": "Brinjal",
+      "imageUrl": "https://pixabay.com/get/gc709d412afb5591d1d043e38e11c51f6a0cc293e47c0a0ea27c5b2c0251fc6d380332197f79cb919fa638fec8a1b571d_640.jpg"
+    },
+    {
+      "commodity": "Cabbage",
+      "imageUrl": "https://pixabay.com/get/g49760b0c0fac2d104c72cba27f5e0edf751b7d1aa00a4f013726e369384a14989519d2b90a84c73b6a56c92be851867ee2c4c9d77cbd47ed51ace70b8ee49258_640.jpg"
+    },
+    {
+      "commodity": "Cauliflower",
+      "imageUrl": "https://pixabay.com/get/ge7a142ab8c199b1844747722cd29383226c4eb8ce6eb548e26117baf0b0f94a5d759baea3acf82873b576b77eb6300d500ce5ce20dcaad86064442f4663752f8_640.png"
+    },
+    {
+      "commodity": "Cluster beans",
+      "imageUrl": "https://pixabay.com/get/gb04c07a2b2c5c7111d9484e345bbd946c1e7e299c361152394a16f04c9357c62c433c74b831e1c4fd57fb22f4bf8fabe13142ad1e4f9685a34a8ebc4775b28e2_640.jpg"
+    },
+    {
+      "commodity": "Banana",
+      "imageUrl": "https://pixabay.com/get/g51d38d5350144276f6adf84d2865215724871db0b1017221bd52fd997cb2c6c1bcbba5ec4cff8ac39659956268daaa406e92e4a43d1a00f7c77a35a1ed24167d_640.jpg"
+    },
+    {
+      "commodity": "Turmeric",
+      "imageUrl": "https://pixabay.com/get/g0cca093e2647f8640b216140f2ca4b2d85be3c5165edec19048972857fef097adcf3dcd2fc24239ddd03c5a138a221128ccc055471e3bf460457d4bbbd3a3cff_640.jpg"
+    },
+    {
+      "commodity": "Cotton",
+      "imageUrl": "https://pixabay.com/get/gf3c443132162c1818529e481c69502330dcfeb0f21f1a07445bfb299a422b280945e2f38ebeb94e75055d473b7f8b501f7a8eb00da470b469bbc086c6fe5b518_640.jpg"
+    },
+    {
+      "commodity": "Maize",
+      "imageUrl": "https://pixabay.com/get/gf3a68b59403339e32bf26687f55cc94180db0159b0ec1170a3e8dcb2b590e0bbc7f78456a04cc03fde51e83018c1918e_640.jpg"
+    },
+    {
+      "commodity": "Rice",
+      "imageUrl": "https://pixabay.com/get/gebf7dae5464501f085fb0c7e626273a84408c2e7beaddbbb62d928ed4714bfd84b88f8b5250f9dea87db4b2410bbfd2e29362b5bce9b10a87244e0f92f96afc1_640.jpg"
+    },
+    {
+      "commodity": "Sunflower",
+      "imageUrl": "https://pixabay.com/get/geb9ff90ebc8daff056edc6fa425b20a373b356133bd6c9de77bc70be022b73432191f865020c7fc818cbf8f34cf4363c0f641c80ba25667f80f76791620a8077_640.jpg"
+    },
+    {
+      "commodity": "Lemon",
+      "imageUrl": "https://pixabay.com/get/g9b74d043907725e04d21c8af5b93fd369c360f7e42b05a5b4489aede97f795e0a966ccfd1ed5bb7e9f4704d870640577b39121049c93d87552f840cff8228678_640.jpg"
+    },
+    {
+      "commodity": "Ginger(Green)",
+      "imageUrl": "https://pixabay.com/get/ge97d6a3e17dd0b8852c03f31569f8cabee68df06824d341013e00210350e54da16c158eb5808801c8fca4d42262757f3_640.jpg"
+    },
+    {
+      "commodity": "Bitter gourd",
+      "imageUrl": "https://pixabay.com/get/g816ede217a064ed6df41ab2539de5a6b879d5e822815d1a5454ce25aa5ee33c01d44a45ff4b98089a6818a5f680777284d7708f97b3050ab6020536e62d0166c_640.jpg"
+    },
+    {
+      "commodity": "Beans",
+      "imageUrl": "https://pixabay.com/get/g757c66581b2857d936b10b20ee15233e921935b1ca1075f8a96cea28b9c848a12cb585ef40bf0e7594f2b21f7ec1d82c87848c42d1ad39fca6d57909f50c5de2_640.jpg"
+    },
+    {
+      "commodity": "Capsicum",
+      "imageUrl": "https://pixabay.com/get/g4e5b1b637a55262dcbee8043cf7fd6f3021c01caaa6fffa8155e2ec64870c3162dd02bc3b024121c0a7854d473334d62713e6a78f14920bb16637d9e7baf5770_640.jpg"
+    },
+    {
+      "commodity": "Pumpkin",
+      "imageUrl": "https://pixabay.com/get/g9c1bedaa56c8d159622f05eea165ba7e703dc2f46f54f5b63e476a887383537fbea5051c26b349c791d84e7ccfa30d5a89d548ad3705ba6140c66e46ab35e2fc_640.jpg"
+    },
+    {
+      "commodity": "Bottle gourd",
+      "imageUrl": "https://pixabay.com/get/g759803055732e450756bb3844f7e77a08f9f1055cdc1bac523f0df7fdd73200ad6928c2e366a00faf615ac87fa3072badaada8581b6a203db790d779829a960f_640.jpg"
+    },
+    {
+      "commodity": "Green Chilli",
+      "imageUrl": "https://pixabay.com/get/g686ce7af3201f0ce6347957e656a050cd28a718220848e771c64e321b9918e9ac4c58d8fbc3b2fd4988c4f76cf9b43514d3b99d91134d7c625c0afcd76577006_640.jpg"
+    },
+    {
+      "commodity": "Bhindi(Ladies Finger)",
+      "imageUrl": "https://pixabay.com/get/g89a0afc3dc1825c2fb6555e59dd132f6aebdecaca6a19a929afe7579b3de8107874f88d928514c8abdca537d49a287086b1837557e5c802d6a358e1a5085fc60_640.jpg"
+    },
+    {
+      "commodity": "Potato",
+      "imageUrl": "https://pixabay.com/get/geb6719752ac7ca0d38c8f6e3081ff42998b078b57502fddbba2c669520beddfea17a76184cc5bbe3852c589763aa391f67276bbade1aa1ef6f6dc8855e65c514_640.jpg"
+    },
+    {
+      "commodity": "Wheat",
+      "imageUrl": "https://pixabay.com/get/g755ecf22cdd995e5b814ad093e3a5debfc6d72562c9d158fdc408f54d4192a426d6c6a324b9aba82fefb68974c548e059d2bfd364150ff4d2028d58310516642_640.jpg"
+    },
+    {
+      "commodity": "Onion",
+      "imageUrl": "https://pixabay.com/get/gab910bef4b2eb8b071e7cd3b1d15826467d56c05eeba879b4aa51cc5b8fdcd8e1a7c9208ae2d5788571cda6be3479e1fa21245ff69db8dbb429d7fd9ba82e131_640.jpg"
+    },
+    {
+      "commodity": "Drumstick",
+      "imageUrl": "https://pixabay.com/get/g76e879da2256924e6692a24cfb91604d675bb514a7c946c3a8e85aba5f83225ea01da0ea3c2af23d927cb9b384adea831654e820101268c507754490867af716_640.jpg"
+    },
+    {
+      "commodity": "Guar",
+      "imageUrl": "https://pixabay.com/get/g5ee8c32d06427fa189e2b944576b41f24e38a779a7c81793b019e23c1c89f965e41227f35c7f5f58914b865c300230e5145e0e6a3b332487a4d124482a3e3599_640.jpg"
+    },
+    {
+      "commodity": "Onion Green",
+      "imageUrl": "https://pixabay.com/get/g6e95081a2eafbc999b6bfe2e7f876461b38c7a6d7d0e29055555e55ef64fcb7d1cde2a16450e38c44394238b78cf2065f65e77816b15077becb5a1185e7babf2_640.jpg"
+    },
+    {
+      "commodity": "Papaya (Raw)",
+      "imageUrl": "https://pixabay.com/get/g3fbe49ee4ea7534edf381383bf1195861d7a6e860ab350becef7b38cf5d8b0befa51640d6a567b3ee1ea6d21129f9607a1b1f661fed9040f171feb3e79f31f45_640.jpg"
+    },
+    {
+      "commodity": "Sweet Potato",
+      "imageUrl": "https://pixabay.com/get/g794e833c03e92c5738d057374844a560bff6171bb0e46dee9d97b484b9dfe94cf61685aeab8b60ffdf709d1a4d31538609eacfdbf58e8ce876a07da599ad1d6b_640.jpg"
+    },
+    {
+      "commodity": "Groundnut",
+      "imageUrl": "https://pixabay.com/get/g0700f1fa3ec64648896b70f0552e539f9beb32e5b13e1900053d935d7e07391ba7443e0de95373ecbe587d0eff1de9d8301596b31717857baf796e8e98821af8_640.jpg"
+    },
+    {
+      "commodity": "Spinach",
+      "imageUrl": "https://pixabay.com/get/g602d27a74bb72dcd9791d0681b77c0556b3562a38b919d35a7ce7a2dc672b1068d718e79f624fe0fa975b69a4648b643e7fbf12c2486ae7aecba2d72b5613c64_640.jpg"
+    },
+    {
+      "commodity": "Mustard",
+      "imageUrl": "https://pixabay.com/get/gcd881b2640fd8469aaf0bed5e0c3c3779b60d0fb13788f898fc867df2995448287723f1f12d0615d5c6c6b930002ef4e45edf8b10ca29e25d09b472182feb1ce_640.jpg"
+    },
+    {
+      "commodity": "Banana - Green",
+      "imageUrl": "https://pixabay.com/get/g31200aae06d2ee326b5167c4949733b338067a9051a8376647686876cc99b9f0b58254b6d7b4451fc4bb115d398a2ba31556724e48a35c9a4a68d31b45620fa2_640.jpg"
+    },
+    {
+      "commodity": "Field Pea",
+      "imageUrl": "https://pixabay.com/get/g3c6775db9d5b50eca57c31b540c341b10b0a743d8b4dd7b2c8b5f952a6816053df537b189ac9be1ff52a9f8cc847d57537d4bc7c2e93b598d126c8e11aa30bad_640.jpg"
+    },
+    {
+      "commodity": "Grapes",
+      "imageUrl": "https://pixabay.com/get/g2b05cada2e7171d0793791cc92075ddf91aaa94168a5ee55ddeb7aad0b2e18bd727fc0ec318e63915859293abb9da6badc4f74123f2efcfec4bc5c71f7929055_640.jpg"
+    },
+    {
+      "commodity": "Castor Seed",
+      "imageUrl": "https://pixabay.com/get/g123ad549243bd49506fbca65e42a63304093dd22e6872e3545aa206a0b73c2d45b327c6b4ae8f9c144d91d46a74d0c9f_640.jpg"
+    },
+    {
+      "commodity": "Jowar(Sorghum)",
+      "imageUrl": "https://pixabay.com/get/gd488fc49e7d85ae6ee4c0e089dadb6e609654200bad2363b30d81b056150a2d239c4762e5f51631e1ccb0a607ad9f306_640.jpg"
+    },
+    {
+      "commodity": "Corriander seed",
+      "imageUrl": "https://pixabay.com/get/g0b6f527b7afc4db8c3c71ae55f56e16a2f3c174269641a3ec66551ee8016daa865d2bd1e7e2c84d2010111141d57b95931050d2336b50d4833b6068e11b74ebb_640.jpg"
+    },
+    {
+      "commodity": "Coriander(Leaves)",
+      "imageUrl": "https://pixabay.com/get/g02ec5c36c239c888a4e3435f8cd0d7b44146983798167504777fbd7ee70e87bae614f66b8adf24f5be813e800901a155d7fb381ac1a918b22f85646b0b2a7209_640.jpg"
+    },
+    {
+      "commodity": "Carrot",
+      "imageUrl": "https://pixabay.com/get/gd00ff82a146fc68d15070e18ffc5d92466211da3945b91d5b5ea93a87bc6d8815a664e6a0a5938abbf5420ef48abb46bb5ffe13390b64929d6f4714596198f47_640.jpg"
+    },
+    {
+      "commodity": "Kulthi(Horse Gram)",
+      "imageUrl": "https://pixabay.com/get/ga82880d5d9d0006388e7e0cb4bb60ac47b4a2846b39c3918a2fb9d1668ea80abd9c2fd821eb519d175b1abd347cf0f45_640.jpg"
+    },
+    {
+      "commodity": "Moath Dal",
+      "imageUrl": "https://pixabay.com/get/g58991499a021e153d7505c5fed9499348926153b8668fab42705a446b2eca0157960c86d644981be1526d634b97cf10b039318ccc16cb93eeef1acd60ad0492c_640.png"
+    },
+    {
+      "commodity": "Peas cod",
+      "imageUrl": "https://pixabay.com/get/gad62768efec4d596a27b6359e58f19618d9cbf6e66f171fb8c660de5eca186f63e6299ee02b9efda12f038707f6cfec980a6bfa063d11f6c586f2d045e148d18_640.png"
+    },
+    {
+      "commodity": "Chikoos(Sapota)",
+      "imageUrl": "https://pixabay.com/get/g455f28b0e5e72d87a02ab58d82a78a3f3d9a1bca8213710fde40e3f5f18a3c5cfc1b608ce91004c7b1f645cf4877162d_640.jpg"
+    },
+    {
+      "commodity": "commodity",
+      "imageUrl": "imageUrl"
+    },
+    {
+      "commodity": "Beetroot",
+      "imageUrl": "https://pixabay.com/get/g25e16d8f9a7e88b090007f246488e354cf50df8c80e240fe030ea7681a1507a65abc517c55bd50587912db4dcec2aa045345c842090bbaa9c146f0984dc019e4_640.jpg"
+    },
+    {
+      "commodity": "Guava",
+      "imageUrl": "https://pixabay.com/get/g9108fb69e2bfa61a182ab4ccf0545321cb485a2f47748cd203839b357507f02a70f412c657318f273e25ba4c159f462cbd7952f61d069bd88cc5ec965cd9b3b9_640.png"
+    },
+    {
+      "commodity": "Peas Wet",
+      "imageUrl": "https://pixabay.com/get/g7f3e22ed8a8356fe3121c2b0b17ac4480063e7d8c02709a1bfcad800095d4d691be0fe50d87c37597b5329db8001cfba915cedf37fa94ae0fdb67184b8863509_640.jpg"
+    },
+    {
+      "commodity": "Methi(Leaves)",
+      "imageUrl": "https://pixabay.com/get/g8ab5abed8fd90c2758e544f745d8a99fd99e2a2b0da8c0ecd0260a90562a2ccd03bded59de10289c85ee6270c49168623cc6ca4eea5321f8563befee78289221_640.jpg"
+    },
+    {
+      "commodity": "Orange",
+      "imageUrl": "https://pixabay.com/get/gab67dc0d372ea99064470b663f28794f35b957bdf123599933a94c02bb2767f601d2eaa044c9831b24d175518e942d77ef9d4dc4ce64bc2649421eb36e9d1e93_640.jpg"
+    },
+    {
+      "commodity": "Apple",
+      "imageUrl": "https://pixabay.com/get/g468a466cc15e51728eb4be6c7af7d7b82e281b09a0e6c0f631cc5f6f3e45b585cbb6e43907e4ea5af6df6b6ebc5773106f17180d59fa5f1eaa9faf3f14086cb1_640.jpg"
+    },
+    {
+      "commodity": "Raddish",
+      "imageUrl": "https://pixabay.com/get/gc873ba331ed60db06a93990b94ce274d4e7a79f36ca70d8d3002d1a46ec6a05150ffa84308bba9bc4c222fd4e2bc1d3a5967cef754505c65245f027320291629_640.jpg"
+    },
+    {
+      "commodity": "Pomegranate",
+      "imageUrl": "https://pixabay.com/get/gfc547920ab47d2d2feae0b1ecc6a9a25a147fb272a5713ebaf2750bbc08fcb6bfa3774fd67467ddc54451809272a136b27fc9bee92d2c7739c569e8cf615b87e_640.jpg"
+    },
+    {
+      "commodity": "Garlic",
+      "imageUrl": "https://pixabay.com/get/g596dd516750c3ec5fe0e8bfe118556fc7c47d72a4a77b14ecf708cd03c0aa4b83d4d11bab1c0f938ca21ea70d5d4eeef90a5de00e2e6cdb7d55d73fe1ad1eaa1_640.jpg"
+    },
+    {
+      "commodity": "Kinnow",
+      "imageUrl": "https://pixabay.com/get/g9ccb09ba9a76abe9ac91aa4ef9305b08eebd78cf3ae546f52021fd4e2e4cb04a9b863b4d52a4b167996ffc1b92f91477133909870ed55c9cc148fb679c1248dc_640.jpg"
+    },
+    {
+      "commodity": "Tender Coconut",
+      "imageUrl": "https://pixabay.com/get/g4afb241924ae810da06f9afb5a2969cfaf1f9a2e5568678a2a8c68a03010e329557e71a82c32ea98aec19bb8e7524df67b0b2a9d3e28a9b3f0baa214c33486b2_640.jpg"
+    },
+    {
+      "commodity": "Water Melon",
+      "imageUrl": "https://pixabay.com/get/g780b871ca53559cd823c8e82864832005049fd94c6cc58e8fe7f786856268888684878c49c3dd067deaa4128297ac3cc0b26f6768b82d8e1010c4ec26e322a29_640.jpg"
+    },
+    {
+      "commodity": "Pineapple",
+      "imageUrl": "https://pixabay.com/get/ga5d70649e6277e2b14dc14b03795be5b6c41ead86e06ffa17f1ad56af7b6c6e0460667950d30893d97662d676fd296a3_640.jpg"
+    },
+    {
+      "commodity": "Turnip",
+      "imageUrl": "https://pixabay.com/get/g01d774c45353c693f8fc418012fd7be7217e69ca754416fcdd97df0ff2107d833a973d10b9053fb22d52e750f0f0273b_640.jpg"
+    },
+    {
+      "commodity": "Papaya",
+      "imageUrl": "https://pixabay.com/get/g53499b3993c1589678ebd99c5d5e77b940e95dff16cbf3388b28f6700f8d24322575bbfc3704fd35f2a4d28ca260fc5ebef8b05aa36b3f0a4c919cf9c26223bf_640.jpg"
+    },
+    {
+      "commodity": "Ginger(Dry)",
+      "imageUrl": "https://pixabay.com/get/gea82dc429bfd8cd061d32d594ac4da578aaf8ef4f4706e1d696c399239fc5b24eb888a3bf58ac5c45665840133d57767c882ec5d23b03d332c860ad92055d161_640.jpg"
+    },
+    {
+      "commodity": "Round gourd",
+      "imageUrl": "https://pixabay.com/get/g380fdeec0a5e0e16ed5d9b84867d7797d16f455a2bf8f32d9eabe9efcfe79a7e359191d47ebbce8ded808fdb9b88280d353d9f2b59b5eb832a35f7bab6c84fde_640.jpg"
+    },
+    {
+      "commodity": "Mango (Raw-Ripe)",
+      "imageUrl": "https://pixabay.com/get/gc6ac2886b119287838961792484c39808661cf3aa7f202c3b588022df4b9f6e243e9e1567f6b1be456b098d2697eed9f28fdc5d0350a7fd356ab753f7a3b3f1b_640.jpg"
+    },
+    {
+      "commodity": "Amaranthus",
+      "imageUrl": "https://pixabay.com/get/g761ee7d265fc1b85769142146c42e6f82bebbea180bf8d8acc17cf7cf187de740f5310b279bdac8bbe8a5b6fc0da630b9bc3c7d22ee256b6f9eb816018bf8a27_640.jpg"
+    },
+    {
+      "commodity": "Tapioca",
+      "imageUrl": "https://pixabay.com/get/g08d36b58047125f10563652f5f339f39cdde2f36beaf4eebf91298fccdd1ee1a19700b38de609eaa5f7c249e33da91fd66e12d0119ef52d0bcd5b8c1b791748b_640.jpg"
+    },
+    {
+      "commodity": "Black pepper",
+      "imageUrl": "https://pixabay.com/get/gc989aebd38876743afcc0fd016de307996dc7531e0f01e5f990fd49b545cc3814fa953b8c4fb55b5d073119f6dc02bd0d4ed3a8d74c7b4224e47baefeb09c19b_640.jpg"
+    },
+    {
+      "commodity": "Coffee",
+      "imageUrl": "https://pixabay.com/get/g7ccf4077c2096c54cc4d6bba9b544ea50c1996ca568de2950fbc4afbf5482d75d50f763f3ea5b4d25eb6436f4a6495cf_640.jpg"
+    },
+    {
+      "commodity": "Coconut Oil",
+      "imageUrl": "https://pixabay.com/get/g6794607bc46c6b2f50c8149696d0a26ab3b3a9c88eccfe1952f21842cb21e238cc2e9cffc9e66bf107580d46bd831cf0fd8d79fbcc77bac38834786f4db762e5_640.jpg"
+    },
+    {
+      "commodity": "Copra",
+      "imageUrl": "https://pixabay.com/get/g9bec2c851f30a682d230af4a9d9ea7c8ef7adae5944e03e388391a1c60dedc780977eb14deabf8148b97f2934a16adc9f438fa8a0b268a05e1fe859728f60e7c_640.jpg"
+    },
+    {
+      "commodity": "Mango",
+      "imageUrl": "https://pixabay.com/get/gdf241089ba76c72f3393bcb948269a12fa81d4ace742ba2f22ad5b18dadddd577207192a835367ee1e951528105319c07691309eaee1144316679822c4c088d4_640.jpg"
+    },
+    {
+      "commodity": "Pepper ungarbled",
+      "imageUrl": "https://pixabay.com/get/gda7b6cbec9584400f44ab1233a5bf0644806244a95ddfc5271c0a954edd556765c75b3d200a3aa768416e7bb8fa93fb896b74b5e5c73bcd14a0ff00752668c59_640.jpg"
+    },
+    {
+      "commodity": "Lime",
+      "imageUrl": "https://pixabay.com/get/g177c810a38885a5a7393c077b2cae2de3c76a8183d6bbb42402341c51fcb9ea62a17d73908550b5af463b5181641d832247e008dc8bbd4534a734487641669b6_640.jpg"
+    },
+    {
+      "commodity": "Jack Fruit",
+      "imageUrl": "https://pixabay.com/get/gfede40d0842f3e37fd027395428de3c786d3f11b66ce27feec930bc46209ac316f6e9abbd394b05884d8f24b06b43b6edeace6162b08780074d26d355ab574de_640.jpg"
+    },
+    {
+      "commodity": "Duster Beans",
+      "imageUrl": "https://pixabay.com/get/g4cc0389c5b71dee51a97bbfc6f8ffba2baf9465eca814844e1abb69dd202280180866e07a7ff0a06a226e63b346782becdb07ac2b69b0eb997c02c06a4955006_640.jpg"
+    },
+    {
+      "commodity": "Niger Seed (Ramtil)",
+      "imageUrl": "https://pixabay.com/get/gfe83f0b375af9ace00f77f6b176de1723b28549781c2188d94c10ca6b6a9725094449b9cf97dcec9462b3304915134bd02dc139e9218185e0b5853ec048a1463_640.jpg"
+    },
+    {
+      "commodity": "Green Peas",
+      "imageUrl": "https://pixabay.com/get/ge0c5da72b6adc57a21fbf684fb64db1a6e65d73fdcbabd882ee1cd4461165dd67aa3ed2b8c91e87fc9a006ef7d8e576e5e7671818da88277a412f44d10d97ed5_640.jpg"
+    },
+    {
+      "commodity": "buttery",
+      "imageUrl": "https://pixabay.com/get/g3d6de452aad236cce047d8525361aae5e97b68165a99cf8ed3b1daef5f3956d3afe9a42b8181a518472dd441afc619cd_640.jpg"
+    },
+    {
+      "commodity": "Sponge gourd",
+      "imageUrl": "https://pixabay.com/get/ga75968d878cc98a42bc05fc261f813808eab983b16ec519fa2f5ce3d2bfb71da665ab80a746a9a3456218f444f22a6a77b2a1311543a8fd5ddcbb26c34f19fac_640.jpg"
+    },
+    {
+      "commodity": "Chili Red",
+      "imageUrl": "https://pixabay.com/get/g3a2b8bd194678aab1c4fa183b1872756a31f209ec7fddff5c014536d98a692fd3e889248a192710b483cf1ee31357c77_640.jpg"
+    },
+    {
+      "commodity": "Linseed",
+      "imageUrl": "https://pixabay.com/get/ge465f038e6ccb30b7455ac2d9ec834b759e652d4ba9982af838ded926d9509eaed06a48e547575d7d2128bc34c6ebb8e9c57ca015250177f219cad5c7288030b_640.jpg"
+    },
+    {
+      "commodity": "Methi Seeds",
+      "imageUrl": "https://pixabay.com/get/g6372e31d39efd111df40520b433d4f035b28a9d9d1e8c2ebd1308ccf78cc49fe57fc67f1fb27cf162b36ff759250304ed0e78c153b0b9c90ddfda172a308fc1b_640.jpg"
+    },
+    {
+      "commodity": "Tamarind Fruit",
+      "imageUrl": "https://pixabay.com/get/g0e9b0a8651a41c5207693b5701a1f6dcd839a2d169c6957a4bbb92840e4892a6a56a8f6d70704cc2e53417b3fe0ccc4de53d8e8beab61d9f77f291b4c1947a9d_640.jpg"
+    },
+    {
+      "commodity": "Chilly Capsicum",
+      "imageUrl": "https://pixabay.com/get/gc1ab09f061ea3e387c189dac7a54e58dfe4d3a11630775a7e90685225f1eb4d375dc440b87ecf6d44dd7c8852e234f2d_640.jpg"
+    },
+    {
+      "commodity": "Safflower",
+      "imageUrl": "https://pixabay.com/get/g4db3816f95a55b81c6de0f57a253d044d045005d543ecd20b08594e137e5622d2d2d53c2d8c5b47a81ebd35d66c1fd6f7c6ec7d30e8f7cd63a3a230158b25501_640.jpg"
+    },
+    {
+      "commodity": "Cardamoms",
+      "imageUrl": "https://pixabay.com/get/g019629156a6b100bc4d1315585933bd9efdfe10a865e66db12244946a767217925677181ba7bd23d2422b7963ee4c1f4_640.jpg"
+    },
+    {
+      "commodity": "Ground Nut Seed",
+      "imageUrl": "https://pixabay.com/get/gc36f47eab80d98e0e30cdcee8fa0a0afbcbc0eeb81ddad293cc1ba9bf72567dca2fa7ccb0f10e41f793606798e3fe442ac88c811702486125fcf2f11280d0ae7_640.jpg"
+    },
+    {
+      "commodity": "Dry Chillies",
+      "imageUrl": "https://pixabay.com/get/gcea7440712cd4d23451d06357f052a24c39ed9b835941ce43981554d09c88298c088a2c55f280c249ae2ebd02fb3af8525eb5d62b660e8da86378ca712a9df77_640.jpg"
+    },
+    {
+      "commodity": "Masur Dal",
+      "imageUrl": "https://pixabay.com/get/ge41e91787ecd89d3808d7f16891521aed839b10941a7b588adcb915d08f10ae19dec7027590372a6b544aed971e92a7e49ec9d8ddbba3780aacecdd586939060_640.png"
+    },
+    {
+      "commodity": "Mashrooms",
+      "imageUrl": "https://pixabay.com/get/g0d631734a024b5dc1e44e3edd8e29858edb6eb3c2ceb0a3b0b24a2e80a3a73ea161b25e50523ddf9a2fcfaeb01c8f64fc9ff0bd81d2a5a0927a161fa8b7ab674_640.jpg"
+    },
+    {
+      "commodity": "Mint(Pudina)",
+      "imageUrl": "https://pixabay.com/get/gcb9f48b9fc972581de83c10c30064883b1a4e051a0bddca1b83895ea440b44b1ad251ce4da350f28a0dba6e5e69364dc4b690ca87449fae34406f7b66ba49752_640.jpg"
+    },
+    {
+      "commodity": "Patti Calcutta",
+      "imageUrl": "https://pixabay.com/get/gb0a4c196082c4d5139b85120623c3a153937eb75b325ca30e5c719f958c28de9e46a434246b43046912385aa713c6b31ff3ed7c59c038c1a539e7ad7a25f06ff_640.jpg"
+    },
+    {
+      "commodity": "Fish",
+      "imageUrl": "https://pixabay.com/get/g8ff5c4ccb2ae7ecefca41fcb4c53e618c46dd5a6fa3001963aa0dc5214f84e49abb15e6d46be722e1799bacd6bb4ac6010c0907391e689ef8a09b6e6ba9f83ea_640.jpg"
+    },
+    {
+      "commodity": "Leafy Vegetable",
+      "imageUrl": "https://pixabay.com/get/g9a65a6f2b08676391ce165fdfa5479544d237fceec2f5b1f5840db2d8fdf50a638ed03601483d9c9a5e7b38eed19e9629c02519e7995cd03ef0bbf9d94f7a04a_640.jpg"
+    },
+    {
+      "commodity": "Season Leaves",
+      "imageUrl": "https://pixabay.com/get/g81dac542974ce1da34acc08a5db1809d4d598ab22f29536f54997283005f9a3638d0afe882d4d03745ba4eade868de797ff2471f38df5403e6eec08753cc7da8_640.jpg"
+    },
+    {
+      "commodity": "commodity",
+      "imageUrl": "imageUrl"
+    },
+    {
+      "commodity": "Sugar",
+      "imageUrl": "https://pixabay.com/get/ga8284fcee0c6f64765611a47fe498621ebd846f3a25c6b80d36e90bc5fafa1c6bb1486e5499e1adbd31942b486510ee02d9075d6438ce7cf2601e4e3ed65564a_640.jpg"
+    },
+    {
+      "commodity": "Chow Chow",
+      "imageUrl": "https://pixabay.com/get/gaa054e1a9408cc9e051324091a11c9b31675f518d3c2cc09315980b7671bc8af5aaecee6094b15851f6da6ec6ff3371b93635330b12b730e6ac9a76db7f6a987_640.jpg"
+    },
+    {
+      "commodity": "Coconut",
+      "imageUrl": "https://pixabay.com/get/g4a78d7c644eb340b624ecbb4ebb1d5facfcee069b1173b16a9600c3c56627c511eb5db198d17c93f8498a0d4c459b14353f43aca7b66d3e390b39aa934705f11_640.jpg"
+    },
+    {
+      "commodity": "Betal Leaves",
+      "imageUrl": "https://pixabay.com/get/g46871ad4c54eb28777dff9f00f09ccd029bea756864307441230802b288b26e50f6dffb0b2ec5ed3225c4741e23a0d6e573304ace0278e457f3085c48471bc06_640.jpg"
+    },
+    {
+      "commodity": "Tube Flower",
+      "imageUrl": "https://pixabay.com/get/g0b9800fa4f7399eb4a893964cdfff299f977a5b92d1e3ed4b227b2572388a507246263a69dfd490207051de9b49631215c5604481b2a811b7c47b1f3d3f26238_640.jpg"
+    },
+    {
+      "commodity": "Rose(Local)",
+      "imageUrl": "https://pixabay.com/get/g653cd53fd6cafdf1a9163517c9e23404daa3a8d4e5ef14d4f0c41ecc6406416a5ff390123d8a8b9847250666acf48be2_640.jpg"
+    },
+    {
+      "commodity": "Jasmine",
+      "imageUrl": "https://pixabay.com/get/g3b9f996335144c1736b8577dbc18173e2a0c349cdca8d1ec146fdc139dd42c186b66a21a1e0a3090805d785dd4a89016c209b3f4b89eee4ae036a49fb5a63227_640.jpg"
+    },
+    {
+      "commodity": "Rose(Loose)",
+      "imageUrl": "https://pixabay.com/get/g18678d777c33ce109b2e4eb11a595e2d20e1f6d8d7292888268d88305ad9e8821bc5acea191e348d63c84f4bc59de1e94f3ed2318d987733104bd3401279fd25_640.jpg"
+    },
+    {
+      "commodity": "Yam",
+      "imageUrl": "https://pixabay.com/get/gfb2734c638feba8b0d49035f287294ac2b49f2e600e848f0e167a9df922bdc29f2b31cfb63e31f966d0b6e1c6d9cfcf0a93871f53885f512fbe989b7d34638b1_640.jpg"
+    },
+    {
+      "commodity": "Bullar",
+      "imageUrl": "https://pixabay.com/get/g4dccc98c8ea4036559395592c10d5cac33deca9ddf86b09e3e83ce1022d5e5dfb3a8676da9e371fec9198e2aadbdf8b04446e02731c91885f14477163eee8d51_640.jpg"
+    },
+    {
+      "commodity": "White Peas",
+      "imageUrl": "https://pixabay.com/get/g463c770a63cf24bcdac4cd9243be05b47716e7ff694ef329c3b99ecacb7bea40cffb1e8728cfc732955c3b349da321c195a6ef8c40f0187d3decb4fa497bab63_640.jpg"
+    },
+    {
+      "commodity": "Mustard Oil",
+      "imageUrl": "https://pixabay.com/get/ge59aabd7ec58558cc74368be6d34ded2b4d6b3e242f4b91826ccfc99cc3fb8501071699731905a2cdb40077303ab0d3933f9200ad75977b5480a70b6c74816c6_640.jpg"
+    },
+    {
+      "commodity": "Peas(Dry)",
+      "imageUrl": "https://pixabay.com/get/gadbfb4a9bee5ad1fede85c10089b7ed08f2ef4d679a684f62384d7300b9ca0c6a5650c3f1b6b3634cd157dd6b672e8919f7cbd2a7eda7a68f3c4f3c9f032aac4_640.jpg"
+    },
+    {
+      "commodity": "Wood",
+      "imageUrl": "https://pixabay.com/get/gaae13492f7cf59b07ab523c5b0e14eaf3bd4a2d06cf9d8cd7552ad39d8af36ed0ae7488da3284c3d0c50c51c448aeeb36584d4be623f8a20b566169117eb1970_640.jpg"
+    },
+    {
+      "commodity": "Sweet Pumpkin",
+      "imageUrl": "https://pixabay.com/get/g35ea09ba5683c863335eed3a2698db8249a023572b8dfb47cc85e5ac4e5f4449f15651c17e9e1de570640a2569afee03_640.jpg"
+    },
+    {
+      "commodity": "Jute",
+      "imageUrl": "https://pixabay.com/get/ga8c034dbcd3aa2310ef66e04eda7af2e7e66b7ffc3911e19615b301f7bcdeab9912e15cc1cca5a8be526613f937a08395d653d69931e976187cb580d9c49b44a_640.jpg"
+    },
+    {
+      "commodity": "Turmeric (raw)",
+      "imageUrl": "https://pixabay.com/get/ge974291b67eb521908716a55fb63b7370398168103d4a00bfb90ea0e3ecd038358ccbba178348a2de8872ea87af47bfcd69d6fd700b41ea8dcadba77c604a19b_640.jpg"
+    },
+    {
+      "commodity": "Millets",
+      "imageUrl": "https://pixabay.com/get/g166b8f37d3757f0b36e6b2a67c4d345a3e285fc129210ec570c5c37c80201b1bcff3c3f1e404706fcfa8c3ddbe50c1328c18eb6ac5785803de3cd933b9461b83_640.jpg"
+    },
+    {
+      "commodity": "Lotus Sticks",
+      "imageUrl": "https://pixabay.com/get/g5fcc30dc6d00d88f294423114ffd2eff7a88431065bbaa6ee88081dd0babcd28a56c586b9a3a15f50019de90b2fade5735789f5bbdf34cb51db2f332767b5c15_640.jpg"
+    },
+    {
+      "commodity": "Cloves",
+      "imageUrl": "https://pixabay.com/get/ga2875f94b1881a3b242b8dd4e22faf720f3086344aaee748e0035a975d8e9bbd39f78c13beb79d10296bdd729b2cf3fbe2d235c95de6f9f9e9d4d4ec99c974f0_640.jpg"
+    },
+    {
+      "commodity": "Coconut Seed",
+      "imageUrl": "https://pixabay.com/get/gd54350b18ceadaed60f71aa493f8ac4d9f8940791486d6e1fe71f07e431cfff1d0221acf0d376faa64f6d2a2f587f4b6fe35b08d864ea9fb9a732ce848ffed27_640.jpg"
+    },
+    {
+      "commodity": "Water chestnut",
+      "imageUrl": "https://pixabay.com/get/gd4b1eda4e7518f676e6a6816934c567079629593204fd62f5bebb612c9759fa18e5a54c857f0af343ad9692309b4ce559e95676c2fd574187920368d61027947_640.jpg"
+    },
+    {
+      "commodity": "Asalia",
+      "imageUrl": "https://pixabay.com/get/g66d68dca3f774662c0ff8249d622cc52fffda73efe2cb251d139a3995b0a01eda1d3b7073f31de23f25a7506274c8c6dacb427fc12877ccbff1feeab2da71cf8_640.jpg"
+    },
+    {
+      "commodity": "Almond(Badam)",
+      "imageUrl": "https://pixabay.com/get/gdd9684cedcadf1aae65135c4ab572f99440edcfc289f7beca2c219bcd447e8439f2b3ad4e374126be4c76148f74adc784198e4a2aff913ed94fc73d20c6c49a1_640.jpg"
+    },
+    {
+      "commodity": "Ghee",
+      "imageUrl": "https://pixabay.com/get/gab843417d6e3bf9e83afbb8cda213c9170fa6d9abec1a29688fb5fad4806e2667bc096717e074f0a6c47651eaf3881d9a023691dd8ca6254082cbd203156bed6_640.jpg"
+    },
+    {
+      "commodity": "Orchid",
+      "imageUrl": "https://pixabay.com/get/g3f9d37e57c3e5dd05afa6eabef88dbff2491e12bf731fc394a6a16a7a4ac067fa73f80cc2da40e6564c08eb9ccd29bbae8adf720ee376f9f2a5052eac99037cd_640.jpg"
+    },
+    {
+      "commodity": "Firewood",
+      "imageUrl": "https://pixabay.com/get/ga985f60ba8f2de689a80fd6c01ae6e713a5377986c190fda5739220cf6caf8abfaf49004a1452e57c07465c4540de6643877a306dabbda6b553665a79c34d4f9_640.jpg"
+    },
+    {
+      "commodity": "Nutmeg",
+      "imageUrl": "https://pixabay.com/get/gb4609135e99aa4afc252070c1173ce55fa95db8cc2d8504cce8daa59e5c2fa81139a7c4ee1876518f9228c4c935ebfaaa2a0c11b7a16c0c8bc260608ca85e96e_640.jpg"
+    },
+    {
+      "commodity": "Rubber",
+      "imageUrl": "https://pixabay.com/get/g0ed4124dc0044d9d0a61633297c58e6ca89066b3e60f5135a5e4b781d2db94bbc3b2ff57e2ada50b6f279929603705cd_640.jpg"
+    },
+    {
+      "commodity": "poppy seeds",
+      "imageUrl": "https://pixabay.com/get/g16f4e3502f07713f5c3d38386093a65325c1f907d38abc41b3b53bc55e500f33f9ec589aef179ced5612256af60e916f6445658e6cb34a42c2dd4f266138783c_640.jpg"
+    },
+    {
+      "commodity": "Lotus",
+      "imageUrl": "https://pixabay.com/get/g45b420e41c955434e798b3b27e1085fdf6bced08b465843dbe906d594460e90a15040de69ece0e5dde7a057b602c7ee8e97224dcfdbb1b13384264efe26a7682_640.jpg"
+    },
+    {
+      "commodity": "Gladiolus Cut Flower",
+      "imageUrl": "https://pixabay.com/get/gf49cee2921d6d36f8a921e43273ca1e989fa6a2a5684d646b3c479dbc284899a996abd8c2cb3f3afa97b237156500826_640.jpg"
+    },
+    {
+      "commodity": "Cock",
+      "imageUrl": "https://pixabay.com/get/g9d4850edf12eb2c636cad0fdb0fbee91c4343ade454e4b7743648c43818da565d11e20f2572a8148956ea8a77a5dc7db7a7e1579e90973ad9112d8340d592d08_640.jpg"
+    },
+    {
+      "commodity": "Cocoa",
+      "imageUrl": "https://pixabay.com/get/g766262fa53363e37ae9a8c4ad8e3c01d3b1a8aee0cb9f95179fa67438a44f8606f3f29190fa399981e72605f828be75b76a4f8cd89d2edb540f316695832aad3_640.jpg"
+    },
+    {
+      "commodity": "Ashwagandha",
+      "imageUrl": "https://pixabay.com/get/g8e58dc97ff5699dc7c450e0abe44e6fe251ff3122338a5592f4070c5b02ebe3636c11b7cde2f5c20ddc446aecc8fe2f6640367a8739494dcce0631743adb4e07_640.jpg"
+    },
+    {
+      "commodity": "nigella seeds",
+      "imageUrl": "https://pixabay.com/get/g8234e246ac5afb5f5fe9d3e73897366969a8696e39393297e915d923db4ae82cd58b8981d4d49b3f244b24b51e7f088bd780879a8970cd8f02f00c8393a32d17_640.jpg"
+    },
+    {
+      "commodity": "gulli",
+      "imageUrl": "https://pixabay.com/get/gde6900c846e69de1cde0eca3a9de0fbbf620b8889c46bd8c2526dbe4ca7de7bbf762a95959faec2ccfad9c7d5f0a5f27_640.jpg"
+    },
+    {
+      "commodity": "Cashewnuts",
+      "imageUrl": "https://pixabay.com/get/gdbfaa1c28de9122a6e5217b1fbd4d560307a99d37e7df3508b43dd2af25adb29cece47853068c26a6cad2377b13ec56f_640.jpg"
+    },
+    {
+      "commodity": "Sabu Dan",
+      "imageUrl": "https://pixabay.com/get/gc1797a415fb5c3b9b6f73602e993e4bf628ed63923c7ed4a983c773e9954764e7300e3bf52f4bfef8afb37c3e50e8875a904b8041150aa0673071c041fc255a7_640.jpg"
+    },
+    {
+      "commodity": "Cow",
+      "imageUrl": "https://pixabay.com/get/g5533437999dbf6af6d5624eb9126b12e3342ffe64863f95ca23b34df8e726b110d71e9ebbbbd66b7d931b2f27ae94b702e7860fc5989e56768934f8ead06ddfb_640.jpg"
+    },
+    {
+      "commodity": "Plum",
+      "imageUrl": "https://pixabay.com/get/g0e40872e72b8233c36a65d3ba5458c1b61442150b5c74714f0a732bedaf25fb354dbbca1ea8a8a455878d396b7995934_640.jpg"
+    },
+    {
+      "commodity": "Calendula",
+      "imageUrl": "https://pixabay.com/get/gf57127c19cabdc677cc59a1d596423245fb6045a820493ef9ba6c2ad17f902359e7134fe4eff37d12b6099a9af15b88b_640.jpg"
+    },
+    {
+      "commodity": "Cherry",
+      "imageUrl": "https://pixabay.com/get/g80f4b77de5d8504f839e92a63a317cbbfb6a4a6f161f0d143e4d706c34dfda9f5e64d276a60c10a4240881a57960883fd3df86849cee25b083e9c259e4184413_640.jpg"
+    },
+    {
+      "commodity": "Astera",
+      "imageUrl": "https://pixabay.com/get/g42392f51a607e203989b849d1ea7f1a146d041fe10db1d17fc4c4a05faa8901e02b38fc192e4be089fb2ccfc0f3a6595316a67eb85205a459413450ce77d8319_640.jpg"
+    },
+    {
+      "commodity": "Lilly",
+      "imageUrl": "https://pixabay.com/get/g9b45bfbb49f59f23a323b6864ef7ae809748d97c021d4b1b3591c624aa8eec7270e9e4ab9512a4793211246f1f28c9a08ccb801202a589b914efa4b0bb690445_640.jpg"
+    },
+    {
+      "commodity": "Red Gram",
+      "imageUrl": "https://pixabay.com/get/g759c92a98ed8363fbcd40e44dbbfe9e0e5c99cba3c21a24f6b4088523eadcbf73e02673a0ce6f71813dbd9b343682d26_640.jpg"
+    },
+    {
+      "commodity": "Amranthas Red",
+      "imageUrl": "https://pixabay.com/get/g316be5176ac715e5bb4b99fd4e009bbfef0a9c4a03b2f498275e2f48e37e0e04c9ece43a1b0da6ed8f5e8b1bd1d59c6d05ecc7c4e95bd284aeda5785cd903988_640.jpg"
+    },
+    {
+      "commodity": "Broken Rice",
+      "imageUrl": "https://pixabay.com/get/g65d3987f2b59622a067f390ecade1f9d7d8fd7f9e5e705e4821785cf775afb332ed6b0cbff909edbcf4852d80a368cc4827acda54ff95eadc288b3ad7e3d52e1_640.jpg"
+    },
+    {
+      "commodity": "Carnation",
+      "imageUrl": "https://pixabay.com/get/ge94082517f7f7ffa0097039b758c7ad66fd3017a2b57ff2356750a808b569782ce79c0ee0e2534d223f36a3ccf89035c538e741beb9eea2815cb215e9e9164ad_640.jpg"
+    },
+    {
+      "commodity": "Mahua",
+      "imageUrl": "https://pixabay.com/get/g38b7b4c19c0571423982d2d70a9584fa5692e0ed193a177cc64d3d4def7a5dd9ebcddf4afff01ebd2ea324ace3554ca3_640.jpg"
+    }
+  ]
+}

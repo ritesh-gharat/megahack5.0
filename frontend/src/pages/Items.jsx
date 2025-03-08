@@ -13,7 +13,7 @@ import {
   // pineapple,
   // watermelon,
 } from "../assets/assets";
-import Navbar from "../components/homeComponents/Navbar";
+import Navbar from "../components/HomeComponents/Navbar";
 // import { asparagus, beans, brinjal, cucumber, jamun, karela, lauki, mango, musk, okra, pineapple, watermelon } from '../../assets/assets'
 
 export default function Items() {

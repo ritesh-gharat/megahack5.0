@@ -1,5 +1,5 @@
 import React from "react";
-import { farmer, farmer1, farmer2, farmer3, farmer4, mango } from "../../assets/assets";
+import { farmer1, farmer2, farmer3, farmer4} from "../../assets/assets";
 import "../homeComponents/Style.css";
 
 const vendors = [
@@ -50,7 +50,7 @@ export default function Vendors() {
       >
         Top Vendors in the market
       </h2>
-      <div className="h-[25vh] no-scrollbar bg-gray-800 flex items-center p-2 gap-4 overflow-x-auto whitespace-nowrap scrollbar-hide scroll-mb-1.5">
+      <div className="h-[25vh] no-scrollbar bg-gray-800 flex items-center p-2 gap-4 overflow-x-auto whitespace-nowrap scrollbar-hide scroll-mb-1.5 px-5">
         {vendors.map((vendor, index) => (
           <div
             key={index}
