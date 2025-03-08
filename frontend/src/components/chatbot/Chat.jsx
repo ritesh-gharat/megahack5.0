@@ -112,7 +112,7 @@ export default function Chatbot() {
             <div className="z-20 w-full h-full md:h-auto p-4 bg-gray-500 rounded-lg shadow-xl border-2 border-green-200">
               <h2 className="text-l font-bold text-green-300 mb-4 text-center flex items-center justify-center gap-2">
                 <Bot className="w-6 h-6" />
-                Farming Assistant
+                Farmer Assistant
               </h2>
               <Card className="h-[calc(100vh-280px)] md:h-96 overflow-y-auto p-4  rounded-lg border border-green-100">
                 <CardContent>

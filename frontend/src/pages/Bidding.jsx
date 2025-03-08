@@ -17,9 +17,78 @@ const VendorForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
+
+    // Prepare data to send, adding required fields not in the form
+    const dataToSend = {
+      ...formData,
+      quantity: parseInt(formData.quantity), // Convert to integer
+      price: parseFloat(formData.price),     // Convert to float
+      bid_history: [],                       // Default for new bids
+      highest_bid_user: "",                  // Default for new bids
+    };
+
+    const url = `http://34.121.0.250:8001/api/bids/${formData.vendor_id}`;
+
+    try {
+      // Try to create a new bid with PUT
+      const putResponse = await fetch(url, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(dataToSend),
+      });
+
+      if (putResponse.ok) {
+        const result = await putResponse.json();
+        console.log("Bid created successfully:", result);
+        alert("Bid created successfully!");
+        // Optionally reset form or redirect
+        setFormData({
+          vendor_id: "",
+          commodity: "",
+          quantity: "",
+          price: "",
+          state: "",
+          district: "",
+          start_time: "",
+          end_time: "",
+        });
+      } else {
+        const errorData = await putResponse.json();
+        if (
+          putResponse.status === 400 &&
+          errorData.detail === "Vendor already exists. Use PATCH to update bids."
+        ) {
+          // Vendor exists, so update with PATCH
+          const patchResponse = await fetch(url, {
+            method: "PATCH",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(dataToSend),
+          });
+
+          if (patchResponse.ok) {
+            const updateResult = await patchResponse.json();
+            console.log("Bid updated successfully:", updateResult);
+            alert("Bid updated successfully!");
+          } else {
+            const patchError = await patchResponse.json();
+            console.error("Error updating bid:", patchError);
+            alert(`Failed to update bid: ${patchError.detail}`);
+          }
+        } else {
+          console.error("Error creating bid:", errorData);
+          alert(`Failed to create bid: ${errorData.detail}`);
+        }
+      }
+    } catch (error) {
+      console.error("Network error:", error);
+      alert("An error occurred while submitting the form. Please try again.");
+    }
   };
 
   return (
@@ -42,7 +111,7 @@ const VendorForm = () => {
                     name={key}
                     value={formData[key]}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-neutral-600 rounded-md focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 focus:border-indigo-500 dark:focus:border-indigo-400 bg-white dark:bg-[#364153] text-gray-900 dark:text-white"
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-neutral-600 rounded-md focus:ring-2 focus:ring-green-500 dark:focus:ring-green-400 focus:border-green-500 dark:focus:border-green-400 bg-white dark:bg-[#364153] text-gray-900 dark:text-white"
                     required
                   />
                 </div>
@@ -50,7 +119,7 @@ const VendorForm = () => {
             </div>
             <button
               type="submit"
-              className="w-full md:w-auto flex justify-center items-center py-3 px-6 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300"
+              className="w-full md:w-auto flex justify-center items-center py-3 px-6 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition duration-300"
             >
               Submit
               <svg

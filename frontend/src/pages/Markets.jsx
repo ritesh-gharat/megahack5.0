@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import MarketMap from "../components/MarketMap/MarketMap";
-import Chat from "../components/chatbot/Chat";
+import Chat from "../components/Chatbot/Chat";
 import commoditiesData from "../assets/commodities_images.json";
 
 

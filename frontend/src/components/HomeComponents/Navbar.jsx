@@ -58,20 +58,20 @@ const Navbar = () => {
             </li>
             <li id="el-9xb85dn8">
               <Link
-                to="/markets"
+                to="/markets?state=Maharashtra&district=Palghar"
                 className="text-white hover:text-green-600 transition-colors duration-300"
               >
                 {t('markets')}
               </Link>
             </li>
-            <li id="el-0pp0a1my">
+            {/* <li id="el-0pp0a1my">
               <Link
                 to="/vendors"
                 className="text-white hover:text-green-600 transition-colors duration-300"
               >
                 {t('vendors')}
               </Link>
-            </li>
+            </li> */}
             <li id="el-q2cu62o3">
               <Link
                 to="/about"
@@ -179,7 +179,7 @@ const Navbar = () => {
           <ul className="mt-4 space-y-4 pb-3">
             <li>
               <Link
-                to="/"
+                to="/home"
                 className="block text-white hover:text-green-600 transition-colors duration-300"
               >
                 {t('home')}
@@ -187,20 +187,20 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to="/markets"
+                to="/markets?state=Maharashtra&district=Palghar"
                 className="block text-white hover:text-green-600 transition-colors duration-300"
               >
                 {t('markets')}
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="/vendors"
                 className="block text-white hover:text-green-600 transition-colors duration-300"
               >
                 {t('vendors')}
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 to="/about"

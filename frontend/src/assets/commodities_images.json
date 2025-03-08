@@ -9,6 +9,30 @@
       "imageUrl": "https://pixabay.com/get/gc709d412afb5591d1d043e38e11c51f6a0cc293e47c0a0ea27c5b2c0251fc6d380332197f79cb919fa638fec8a1b571d_640.jpg"
     },
     {
+      "commodity": "Little gourd (Kundru)",
+      "imageUrl": "https://3.imimg.com/data3/UG/QP/MY-10786475/assets-img-portfolio-images-littlegourd-500x500.jpg"
+    },
+    {
+      "commodity": "Bengal Gram Dal (Chana Dal)",
+      "imageUrl": "https://healthynz.in/wp-content/uploads/2023/05/chana-dal.jpg"
+    },
+    {
+      "commodity": "Cummin Seed(Jeera)",
+      "imageUrl": "https://www.greendna.in/cdn/shop/products/cumin1_1000x.jpg?v=1561041488"
+    },
+    {
+      "commodity": "Cowpea (Lobia/Karamani)",
+      "imageUrl": "https://5.imimg.com/data5/WN/EF/SL/SELLER-13256592/cowpea-lobia-thattaipayuru-karamani.jpg"
+    },
+    {
+      "commodity": "Sesamum(Sesame,Gingelly,Til)",
+      "imageUrl": "https://cdn.britannica.com/66/212766-050-FF1A49A0/sesame-seeds-wooden-spoon.jpg"
+    },
+    {
+      "commodity": "Cinamon(Dalchini)",
+      "imageUrl": "https://www.archanaskitchen.com/media/k2/items/cache/0a29d0ef57ced3a7c1d1ed4eda5e2ff6_XL.jpg"
+    },
+    {
       "commodity": "Cabbage",
       "imageUrl": "https://pixabay.com/get/g49760b0c0fac2d104c72cba27f5e0edf751b7d1aa00a4f013726e369384a14989519d2b90a84c73b6a56c92be851867ee2c4c9d77cbd47ed51ace70b8ee49258_640.jpg"
     },
@@ -74,7 +98,7 @@
     },
     {
       "commodity": "Green Chilli",
-      "imageUrl": "https://pixabay.com/get/g686ce7af3201f0ce6347957e656a050cd28a718220848e771c64e321b9918e9ac4c58d8fbc3b2fd4988c4f76cf9b43514d3b99d91134d7c625c0afcd76577006_640.jpg"
+      "imageUrl": "https://www.greendna.in/cdn/shop/products/green_chilli_1229x.jpg?v=1562414368"
     },
     {
       "commodity": "Bhindi(Ladies Finger)",
@@ -373,12 +397,28 @@
       "imageUrl": "https://pixabay.com/get/g81dac542974ce1da34acc08a5db1809d4d598ab22f29536f54997283005f9a3638d0afe882d4d03745ba4eade868de797ff2471f38df5403e6eec08753cc7da8_640.jpg"
     },
     {
-      "commodity": "commodity",
-      "imageUrl": "imageUrl"
+      "commodity": "Amla(Nelli Kai)",
+      "imageUrl": "https://eangadi.in/image/cache/catalog/Seller_1/eangadi-Fresh-Fruits-Amla-Nellikai-350x350.jpg"
+    },
+    {
+      "commodity": "Snakeguard",
+      "imageUrl": "https://gourmetgarden.in/cdn/shop/files/SnakeGourdNew_a8c5f5f4-ee47-4439-827e-9df9d4e51473_1280x.png?v=1740799542"
+    },
+    {
+      "commodity": "Black Gram (Urd Beans)(Whole)",
+      "imageUrl": "https://d229b7zkuz7e.cloudfront.net/images/commodity/oJKCPhrFyTU39u1P1gSDyfb2mIB6wp322qEuekot.jpg"
+    },
+    {
+      "commodity": "Bajra(Pearl Millet/Cumbu)",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg_LUmBfbrm4yKg2VJd5GGrZIjAfx25KJtSA&s"
+    },
+    {
+      "commodity": "Cucumbar(Kheera)",
+      "imageUrl": "https://www.jiomart.com/images/product/original/590000259/cucumber-kheera-500-g-product-images-o590000259-p590000259-0-202411140941.jpg?im=Resize=(420,420)"
     },
     {
       "commodity": "Sugar",
-      "imageUrl": "https://pixabay.com/get/ga8284fcee0c6f64765611a47fe498621ebd846f3a25c6b80d36e90bc5fafa1c6bb1486e5499e1adbd31942b486510ee02d9075d6438ce7cf2601e4e3ed65564a_640.jpg"
+      "imageUrl": "https://static.toiimg.com/thumb/resizemode-4,width-1280,height-720,msid-111947553/111947553.jpg"
     },
     {
       "commodity": "Chow Chow",
@@ -474,7 +514,7 @@
     },
     {
       "commodity": "Ghee",
-      "imageUrl": "https://pixabay.com/get/gab843417d6e3bf9e83afbb8cda213c9170fa6d9abec1a29688fb5fad4806e2667bc096717e074f0a6c47651eaf3881d9a023691dd8ca6254082cbd203156bed6_640.jpg"
+      "imageUrl": "https://www.forjain.com/images/thumbs/001/0019566_desi-cow-ghee-machine-churned-1-ltr_400.jpeg"
     },
     {
       "commodity": "Orchid",
@@ -530,7 +570,7 @@
     },
     {
       "commodity": "Sabu Dan",
-      "imageUrl": "https://pixabay.com/get/gc1797a415fb5c3b9b6f73602e993e4bf628ed63923c7ed4a983c773e9954764e7300e3bf52f4bfef8afb37c3e50e8875a904b8041150aa0673071c041fc255a7_640.jpg"
+      "imageUrl": "https://static.toiimg.com/photo/74241596.cms"
     },
     {
       "commodity": "Cow",

@@ -11,9 +11,11 @@ import {
 
 import Home from "./pages/Home";
 import Landing from "./pages/Landing";
-import Items from "./pages/Items";
+import Item from "./pages/Item";
 import Markets from "./pages/Markets";
 import Bidding from "./pages/Bidding";
+import About from "./pages/About";
+import Navbar from "./components/HomeComponents/Navbar";
 
 // Protected route component
 const ProtectedRoute = ({ children }) => {
@@ -33,18 +35,19 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route
+          path="/about"
+          element={
+            <>
+              <Navbar />
+              <About />
+            </>
+          }
+        />
+        <Route
           path="/home"
           element={
             <ProtectedRoute>
               <Home />
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path="/items"
-          element={
-            <ProtectedRoute>
-              <Items />
             </ProtectedRoute>
           }
         />
@@ -57,10 +60,18 @@ export default function App() {
           }
         />
         <Route
+          path="/items"
+          element={
+            <ProtectedRoute>
+              <Item />
+            </ProtectedRoute>
+          }
+        />
+        <Route
           path="/bidding"
           element={
             <ProtectedRoute>
-              <Bidding/>
+              <Bidding />
             </ProtectedRoute>
           }
         />
