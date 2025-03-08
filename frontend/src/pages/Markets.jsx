@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import MarketMap from "../components/MarketMap/MarketMap";
-import Chat from "../components/chatbot/Chat";
+import Chat from "../components/Chatbot/Chat";
+import commoditiesData from "../assets/commodities_images.json";
+
 
 // import { useLoc } from "../Context/DistContext";
 
@@ -11,13 +13,10 @@ export default function Markets() {
   const district = searchParams.get("district");
   const [marketData, setMarketData] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [images, setImages] = useState(null);
   const [error, setError] = useState(null);
   const [userDistrict, setUserDistrict] = useState(district);
   const [nearestMarket, setNearestMarket] = useState(null);
   const [commodityImages, setCommodityImages] = useState({});
-
-  // const { state, setstate } = useLoc();
 
   useEffect(() => {
     if (!state) return;
@@ -107,43 +106,32 @@ export default function Markets() {
       <div className="text-center py-12">Please search for a location.</div>
     );
 
-  const getImages = async (commodity) => {
+  const getImages = (commodity) => {
     if (!commodity) return;
 
-    // If we already have the image URL cached, return it
+    // Check if we already have the image URL in our state
     if (commodityImages[commodity]) {
       return commodityImages[commodity];
     }
 
-    try {
-      const response = await fetch(
-        `https://pixabay.com/api/?key=${
-          import.meta.env.VITE_PIXABAY_API_KEY
-        }&q=${encodeURIComponent(commodity)}&image_type=photo&per_page=3`
-      );
+    console.log(commodity);
 
-      if (!response.ok) throw new Error("Failed to fetch images");
-      const data = await response.json();
+    // Find the commodity in our JSON data
+    const commodityInfo = commoditiesData.commodities.find(
+      (com) => com.commodity.toLowerCase() === commodity.toLowerCase()
+    );
 
-      if (data.hits && data.hits.length > 0) {
-        // Update the commodityImages state with the new image URL
-        setCommodityImages((prev) => ({
-          ...prev,
-          [commodity]: data.hits[0].webformatURL,
-        }));
-        return data.hits[0].webformatURL;
-      }
-
-      // If no image found, store a placeholder
+    if (commodityInfo) {
+      console.log(commodityInfo.imageUrl);
+      // Cache the image URL in state
       setCommodityImages((prev) => ({
         ...prev,
-        [commodity]: "/placeholder-image.jpg", // Add a default placeholder image
+        [commodity]: commodityInfo.imageUrl,
       }));
-      return "/placeholder-image.jpg";
-    } catch (err) {
-      console.error(`Error fetching image for ${commodity}:`, err);
-      return "/placeholder-image.jpg";
+      return commodityInfo.imageUrl;
     }
+
+    return;
   };
 
   return (
@@ -199,10 +187,10 @@ export default function Markets() {
                 >
                   <div className="relative aspect-square bg-green-100 dark:bg-green-900 overflow-hidden">
                     <div className="w-full h-full flex items-center justify-center bg-gray-100 dark:bg-gray-800">
-                      {commodityImages[commodity] ? (
+                      {getImages(commodity) ? (
                         <img
                           className="w-full h-full object-cover"
-                          src={commodityImages[commodity]}
+                          src={getImages(commodity)}
                           alt={commodity}
                           loading="lazy"
                         />

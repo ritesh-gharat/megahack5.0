@@ -7,8 +7,6 @@ export default function Location() {
 
   const { state, setState, dist, setdist } = useLoc();
 
-  console.log(state, dist);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     if (state && dist) {
