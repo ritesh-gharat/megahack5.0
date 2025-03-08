@@ -1,8 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { farmer } from "../../assets/assets";
+import { useTranslation } from "react-i18next";
 
 export default function Banner() {
+  const { t } = useTranslation();
+
   return (
     <div className="relative h-screen w-full">
       <div
@@ -18,7 +21,7 @@ export default function Banner() {
             muted
           >
             <source src={farmer} type="video/mp4" />
-            Your browser does not support the video tag.
+            {t('yourBrowserDoesNotSupportTheVideoTag')}
           </video>
         </div>
         <div
@@ -30,14 +33,13 @@ export default function Banner() {
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in-up"
               id="el-vx0xxgb6"
             >
-              Find Fresh Local Produce Near You
+              {t('find Fresh Local Produce Near You')}
             </h1>
             <p
               className="text-lg sm:text-sm md:text-xl text-white mb-8 animate-fade-in-up animation-delay-300"
               id="el-2m8aiznz"
             >
-              Connect with local farmers' markets, discover fresh produce, and
-              support sustainable food systems in your community
+              {t('connect With Local Farmers Markets')}
             </p>
             <div
               className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-up animation-delay-600"
@@ -68,7 +70,7 @@ export default function Banner() {
                     id="el-qjyiq63c"
                   ></line>
                 </svg>
-                Find Markets Near Me
+                {t('find Markets Near Me')}
               </NavLink>
               <NavLink
                 to="/items"
@@ -95,7 +97,7 @@ export default function Banner() {
                     id="el-p1wjbz8x"
                   ></path>
                 </svg>
-                Browse Seasonal Products
+                {t('browse Seasonal Products')}
               </NavLink>
             </div>
           </div>

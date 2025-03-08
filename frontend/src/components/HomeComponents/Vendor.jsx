@@ -1,6 +1,7 @@
 import React from "react";
-import { farmer1, farmer2, farmer3, farmer4} from "../../assets/assets";
+import { farmer1, farmer2, farmer3, farmer4 } from "../../assets/assets";
 import "../homeComponents/Style.css";
+import { useTranslation } from "react-i18next";
 
 const vendors = [
   {
@@ -42,13 +43,15 @@ const vendors = [
 ];
 
 export default function Vendors() {
+  const { t } = useTranslation();
+
   return (
     <div>
       <h2
-      className  ="text-3xl md:text-3xl text-center bg-gray-800 p-10 font-bold text-green-800 dark:text-green-300 "
+        className="text-3xl md:text-3xl text-center bg-gray-800 p-10 font-bold text-green-800 dark:text-green-300"
         id="el-qr71hbxy"
       >
-        Top Vendors in the market
+        {t('top')} {t('vendors')} {t('in')} {t('the')} {t('market')}
       </h2>
       <div className="h-[25vh] no-scrollbar bg-gray-800 flex items-center p-2 gap-4 overflow-x-auto whitespace-nowrap scrollbar-hide scroll-mb-1.5 px-5">
         {vendors.map((vendor, index) => (

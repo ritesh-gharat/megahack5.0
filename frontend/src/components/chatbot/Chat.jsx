@@ -86,7 +86,7 @@ export default function Chatbot() {
         }}
         className="fixed z-20 flex justify-center items-center bottom-4 right-4 rounded-4xl p-4 shadow-lg chat-button"
       >
-        <Bot className="w-6 h-6 mr-1" />
+        <Bot className="w-6 h-10 mr-1" />
         <h3> Chat with us </h3>
       </Button>
 

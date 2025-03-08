@@ -24,14 +24,13 @@ export default function Location() {
                 className="text-3xl md:text-4xl font-bold text-green-800 dark:text-green-300 mt-10 mb-3"
                 id="el-qr71hbxy"
               >
-                Find Markets Near You
+                शोधा बाजार जवळ आपण
               </h2>
               <p
                 className="text-gray-600 dark:text-gray-300 text-lg"
                 id="el-90bk1lvu"
               >
-                Discover fresh produce, artisanal goods, and sustainable
-                products at your local farmers markets
+                शोधा ताजे उत्पादन, हस्तकला वस्तू, आणि शाश्वत उत्पादने येथे आपल्या स्थानिक शेतकरी बाजार
               </p>
             </div>
             <div
@@ -50,7 +49,7 @@ export default function Location() {
                       className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
                       id="el-dfgn8agb"
                     >
-                      State
+                      राज्य
                     </label>
                     <div className="relative" id="el-d2vlwpub">
                       <div
@@ -84,7 +83,7 @@ export default function Location() {
                         type="text"
                         id="state"
                         name="state"
-                        placeholder="Enter state"
+                        placeholder="प्रविष्ट करा राज्य"
                         value={state}
                         onChange={(e) => setState(e.target.value)}
                         required
@@ -97,7 +96,7 @@ export default function Location() {
                       className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 mt-2"
                       id="el-dfgn8agb"
                     >
-                      District/City
+                      जिल्हा/शहर
                     </label>
                     <div className="relative" id="el-d2vlwpub">
                       <div
@@ -131,7 +130,7 @@ export default function Location() {
                         type="text"
                         id="district-city"
                         name="district-city"
-                        placeholder="Enter district/city"
+                        placeholder="प्रविष्ट करा जिल्हा/शहर"
                         value={dist}
                         onChange={(e) => setdist(e.target.value)}
                         required
@@ -170,7 +169,7 @@ export default function Location() {
                           id="el-v42hzodu"
                         ></line>
                       </svg>
-                      Search Markets
+                      शोधा बाजार
                     </div>
                   </button>
                 </div>

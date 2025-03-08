@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useUser, useClerk } from "@clerk/clerk-react";
 import Logo from "../../assets/logo.svg";
+import GoogleTranslate from "../GoogleTranslate";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,6 +11,7 @@ const Navbar = () => {
   const { user, isSignedIn } = useUser();
   const { signOut } = useClerk();
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const handleSignOut = async () => {
     await signOut();
@@ -50,7 +53,7 @@ const Navbar = () => {
                 to="/home"
                 className="text-white hover:text-green-600 transition-colors duration-300"
               >
-                Home
+                {t('home')}
               </Link>
             </li>
             <li id="el-9xb85dn8">
@@ -58,7 +61,7 @@ const Navbar = () => {
                 to="/markets"
                 className="text-white hover:text-green-600 transition-colors duration-300"
               >
-                Markets
+                {t('markets')}
               </Link>
             </li>
             <li id="el-0pp0a1my">
@@ -66,7 +69,7 @@ const Navbar = () => {
                 to="/vendors"
                 className="text-white hover:text-green-600 transition-colors duration-300"
               >
-                Vendors
+                {t('vendors')}
               </Link>
             </li>
             <li id="el-q2cu62o3">
@@ -74,7 +77,7 @@ const Navbar = () => {
                 to="/about"
                 className="text-white hover:text-green-600 transition-colors duration-300"
               >
-                About
+                {t('about')}
               </Link>
             </li>
             <li id="el-addbids">
@@ -82,8 +85,11 @@ const Navbar = () => {
                 to="/bidding"
                 className="text-white hover:text-green-600 transition-colors duration-300"
               >
-                Add Bids
+                {t('addBids')}
               </Link>
+            </li>
+            <li>
+              <GoogleTranslate />
             </li>
           </ul>
 
@@ -124,7 +130,6 @@ const Navbar = () => {
                 </Link>
               )}
 
-              {/* Profile Dropdown */}
               {isProfileDropdownOpen && isSignedIn && (
                 <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 cursor-pointer">
                   <div className="px-4 py-2 text-sm text-gray-700 border-b">
@@ -134,13 +139,13 @@ const Navbar = () => {
                     to="/profile"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
-                    Profile Settings
+                    {t('profileSettings')}
                   </Link>
                   <button
                     onClick={handleSignOut}
                     className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer"
                   >
-                    Sign Out
+                    {t('signOut')}
                   </button>
                 </div>
               )}
@@ -170,7 +175,6 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         <div className={`md:hidden ${isMenuOpen ? "block" : "hidden"}`}>
           <ul className="mt-4 space-y-4 pb-3">
             <li>
@@ -178,7 +182,7 @@ const Navbar = () => {
                 to="/"
                 className="block text-white hover:text-green-600 transition-colors duration-300"
               >
-                Home
+                {t('home')}
               </Link>
             </li>
             <li>
@@ -186,7 +190,7 @@ const Navbar = () => {
                 to="/markets"
                 className="block text-white hover:text-green-600 transition-colors duration-300"
               >
-                Markets
+                {t('markets')}
               </Link>
             </li>
             <li>
@@ -194,7 +198,7 @@ const Navbar = () => {
                 to="/vendors"
                 className="block text-white hover:text-green-600 transition-colors duration-300"
               >
-                Vendors
+                {t('vendors')}
               </Link>
             </li>
             <li>
@@ -202,7 +206,7 @@ const Navbar = () => {
                 to="/about"
                 className="block text-white hover:text-green-600 transition-colors duration-300"
               >
-                About
+                {t('about')}
               </Link>
             </li>
             <li>
@@ -210,7 +214,7 @@ const Navbar = () => {
                 to="/bidding"
                 className="block text-white hover:text-green-600 transition-colors duration-300"
               >
-                Add Bids
+                {t('addBids')}
               </Link>
             </li>
             {isSignedIn ? (
@@ -230,7 +234,7 @@ const Navbar = () => {
                     to="/profile"
                     className="block text-white hover:text-green-600 transition-colors duration-300"
                   >
-                    Profile Settings
+                    {t('profileSettings')}
                   </Link>
                 </li>
                 <li>
@@ -238,7 +242,7 @@ const Navbar = () => {
                     onClick={handleSignOut}
                     className="block w-full text-left text-white hover:text-green-600 transition-colors duration-300"
                   >
-                    Sign Out
+                    {t('signOut')}
                   </button>
                 </li>
               </>
@@ -248,7 +252,7 @@ const Navbar = () => {
                   to="/sign-in"
                   className="block text-white hover:text-green-600 transition-colors duration-300"
                 >
-                  Sign In
+                  {t('signIn')}
                 </Link>
               </li>
             )}
