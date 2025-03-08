@@ -1,9 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useLoc } from "../../Context/DistContext";
+import { useTranslation } from "react-i18next";
 
 export default function Location() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const { state, setState, dist, setdist } = useLoc();
 
@@ -24,13 +26,14 @@ export default function Location() {
                 className="text-3xl md:text-4xl font-bold text-green-800 dark:text-green-300 mt-10 mb-3"
                 id="el-qr71hbxy"
               >
-                शोधा बाजार जवळ आपण
+                {t('find')} {t('markets')} {t('near')} {t('you')}
               </h2>
               <p
                 className="text-gray-600 dark:text-gray-300 text-lg"
                 id="el-90bk1lvu"
               >
-                शोधा ताजे उत्पादन, हस्तकला वस्तू, आणि शाश्वत उत्पादने येथे आपल्या स्थानिक शेतकरी बाजार
+                {t('discover')} {t('fresh')} {t('produce')}, {t('artisanal')} {t('goods')}, {t('and')} {t('sustainable')}
+                {t('products')} {t('at')} {t('your')} {t('local')} {t('farmers')} {t('markets')}
               </p>
             </div>
             <div
@@ -49,7 +52,7 @@ export default function Location() {
                       className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
                       id="el-dfgn8agb"
                     >
-                      राज्य
+                      {t('state')}
                     </label>
                     <div className="relative" id="el-d2vlwpub">
                       <div
@@ -83,7 +86,7 @@ export default function Location() {
                         type="text"
                         id="state"
                         name="state"
-                        placeholder="प्रविष्ट करा राज्य"
+                        placeholder={`${t('enter')} ${t('state')}`}
                         value={state}
                         onChange={(e) => setState(e.target.value)}
                         required
@@ -96,7 +99,7 @@ export default function Location() {
                       className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 mt-2"
                       id="el-dfgn8agb"
                     >
-                      जिल्हा/शहर
+                      {t('district')} / {t('city')}
                     </label>
                     <div className="relative" id="el-d2vlwpub">
                       <div
@@ -130,7 +133,7 @@ export default function Location() {
                         type="text"
                         id="district-city"
                         name="district-city"
-                        placeholder="प्रविष्ट करा जिल्हा/शहर"
+                        placeholder={`${t('enter')} ${t('district')} / ${t('city')}`}
                         value={dist}
                         onChange={(e) => setdist(e.target.value)}
                         required
@@ -169,7 +172,7 @@ export default function Location() {
                           id="el-v42hzodu"
                         ></line>
                       </svg>
-                      शोधा बाजार
+                      {t('search')} {t('markets')}
                     </div>
                   </button>
                 </div>
