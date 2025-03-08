@@ -2,7 +2,8 @@ import Vendors from '../components/HomeComponents/Vendor'
 import Chat from '../components/chatbot/Chat'
 import Location from '../components/HomeComponents/Location'
 import Navbar from '../components/HomeComponents/Navbar'
-import Season from '../components/HomeComponents/Season'
+import Season from '../components/Landing/Season'
+import ActiveBids from '../components/ActiveBids'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Navbar/>
       <Location/>
       <Vendors/>
+      <ActiveBids/>
       <Season/>
       <Chat/>
     </div>

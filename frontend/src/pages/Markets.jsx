@@ -147,7 +147,7 @@ export default function Markets() {
   };
 
   return (
-    <div className="py-12 md:py-16 lg:py-20 bg-gray-50 dark:bg-gray-800">
+    <div className="py-12 md:py-20 lg:py-20 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-green-800 dark:text-green-300 mb-12 text-center">
           Markets in {district ? `${district}, ` : ""}

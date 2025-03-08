@@ -13,6 +13,7 @@ import Home from "./pages/Home";
 import Landing from "./pages/Landing";
 import Items from "./pages/Items";
 import Markets from "./pages/Markets";
+import Bidding from "./pages/Bidding";
 
 // Protected route component
 const ProtectedRoute = ({ children }) => {
@@ -28,7 +29,7 @@ const ProtectedRoute = ({ children }) => {
 
 export default function App() {
   return (
-    <div className="font-bold">
+    <div className="">
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route
@@ -52,6 +53,14 @@ export default function App() {
           element={
             <ProtectedRoute>
               <Markets />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/bidding"
+          element={
+            <ProtectedRoute>
+              <Bidding/>
             </ProtectedRoute>
           }
         />

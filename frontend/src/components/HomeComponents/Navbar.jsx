@@ -77,19 +77,20 @@ const Navbar = () => {
                 About
               </Link>
             </li>
+            <li id="el-addbids">
+              <Link
+                to="/bidding"
+                className="text-white hover:text-green-600 transition-colors duration-300"
+              >
+                Add Bids
+              </Link>
+            </li>
           </ul>
 
           <div
             className="hidden md:flex items-center space-x-4"
             id="el-k2s75zti"
           >
-            {/* <Link to="/search" className="text-white hover:text-green-600 transition-colors duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="11" cy="11" r="8"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-              </svg>
-            </Link> */}
-
             <div className="relative">
               {isSignedIn ? (
                 <button
@@ -202,6 +203,14 @@ const Navbar = () => {
                 className="block text-white hover:text-green-600 transition-colors duration-300"
               >
                 About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/bidding"
+                className="block text-white hover:text-green-600 transition-colors duration-300"
+              >
+                Add Bids
               </Link>
             </li>
             {isSignedIn ? (
